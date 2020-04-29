@@ -38,4 +38,9 @@ jobs:
         # Docker repository to tag the image with
         repository: djja/angular
         # Comma-delimited list of tags. These will be added to the registry/repository to form the image's tags
-        tags: $github.GITHUB_RUN_ID, latest, aap
+        tags: latest
+        # Automatically tags the built image with the git reference as per the readme
+        tag_with_ref: true # optional
+        # Automatically tags the built image with the git short SHA as per the readme
+        tag_with_sha: true # optional
+        
