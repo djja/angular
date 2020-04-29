@@ -32,4 +32,4 @@ jobs:
         # Docker repository to tag the image with
         repository: djja/angular
         # Comma-delimited list of tags. These will be added to the registry/repository to form the image's tags
-        tags: latest, GITHUB_RUN_ID
+        tags: latest, $GITHUB_RUN_ID
